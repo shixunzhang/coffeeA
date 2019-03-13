@@ -36,7 +36,6 @@ public class MainActivity extends Activity {
 
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
 				Intent intent = new Intent();
 				intent.setClass(MainActivity.this, PlayActivity.class);
 				MainActivity.this.startActivity(intent);
@@ -49,7 +48,6 @@ public class MainActivity extends Activity {
 
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
 				Intent intent = new Intent();
 				intent.setClass(MainActivity.this, HardActivity.class);
 				MainActivity.this.startActivity(intent);
@@ -63,7 +61,6 @@ public class MainActivity extends Activity {
 
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
 				Intent intent = new Intent();
 				intent.setClass(MainActivity.this, HelpActivity.class);
 				MainActivity.this.startActivity(intent);
@@ -75,12 +72,10 @@ public class MainActivity extends Activity {
 
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
 			new AlertDialog.Builder(MainActivity.this).setTitle("提示").setMessage("是否退出").setNeutralButton("取消", null).setNegativeButton("确定", new DialogInterface.OnClickListener() {
 
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
-					// TODO Auto-generated method stub
 					MainActivity.this.finish();
 				}
 			}).create().show();

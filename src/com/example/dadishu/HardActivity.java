@@ -48,7 +48,6 @@ public class HardActivity extends Activity{
 
 				@Override
 				public boolean onTouch(View v, MotionEvent event) {
-					// TODO Auto-generated method stub
 					v.setVisibility(View.INVISIBLE);
 					count++;
 					Toast.makeText(HardActivity.this, "打到["+ count + "]只地鼠", Toast.LENGTH_SHORT).show();
@@ -62,7 +61,6 @@ public class HardActivity extends Activity{
 
 			@Override
 			public boolean onTouch(View arg0, MotionEvent arg1) {
-				// TODO Auto-generated method stub
 				boomed=true;
 				if(k == true){
 					  k=false;
@@ -72,7 +70,6 @@ public class HardActivity extends Activity{
 
 		            @Override
 		            public void onClick(DialogInterface dialog, int which) {
-			            // TODO Auto-generated method stub
 		            	boomed = false;
 			            thread = new MyThread();
 			           time = 3000;
@@ -85,7 +82,6 @@ public class HardActivity extends Activity{
 
 		       @Override
 		       public void onClick(DialogInterface arg0, int arg1) {
-			     // TODO Auto-generated method stub
 		    	     k=true;
 			          HardActivity.this.finish();
 		       }}).create().show();
@@ -153,7 +149,6 @@ public class HardActivity extends Activity{
 
              @Override
              public void onClick(DialogInterface dialog, int which) {
-	            // TODO Auto-generated method stub
 	            thread = new MyThread();
 	           time = 3000;
 	            count =0;
@@ -165,7 +160,6 @@ public class HardActivity extends Activity{
 
         @Override
         public void onClick(DialogInterface arg0, int arg1) {
-	     // TODO Auto-generated method stub
        	 k=true;
 	          HardActivity.this.finish();
         }}).create().show();
@@ -206,7 +200,6 @@ public class HardActivity extends Activity{
 					    try {
 							Thread.sleep(new Random().nextInt(500)+500);
 						} catch (InterruptedException e) {
-							// TODO Auto-generated catch block
 							e.printStackTrace();
 						}
 						time = time -50;

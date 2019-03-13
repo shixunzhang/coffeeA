@@ -47,7 +47,6 @@ public class PlayActivity extends Activity{
 
 				@Override
 				public boolean onTouch(View v, MotionEvent event) {
-					// TODO Auto-generated method stub
 					v.setVisibility(View.INVISIBLE);
 					count++;
 					Toast.makeText(PlayActivity.this, "打到["+ count + "]只地鼠", Toast.LENGTH_SHORT).show();
@@ -104,7 +103,6 @@ public class PlayActivity extends Activity{
 
              @Override
              public void onClick(DialogInterface dialog, int which) {
-	            // TODO Auto-generated method stub
 	            thread = new MyThread();
 	           time = 3000;
 	            count =0;
@@ -116,7 +114,6 @@ public class PlayActivity extends Activity{
 
         @Override
         public void onClick(DialogInterface arg0, int arg1) {
-	     // TODO Auto-generated method stub
        	 k=true;
 	          PlayActivity.this.finish();
         }}).create().show();
@@ -156,7 +153,6 @@ public class PlayActivity extends Activity{
 					    try {
 							Thread.sleep(new Random().nextInt(1000)+1000);
 						} catch (InterruptedException e) {
-							// TODO Auto-generated catch block
 							e.printStackTrace();
 						}
 						time = time -100;
