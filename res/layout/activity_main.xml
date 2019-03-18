@@ -14,23 +14,6 @@
         android:layout_marginRight="80dp"
         android:text="退出" />
 
-    <Button
-        android:id="@+id/easyBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="56dp"
-        android:text="简单模式" />
-
-    <Button
-        android:id="@+id/hardBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginRight="61dp"
-        android:layout_toLeftOf="@+id/helpBtn"
-        android:text="困难模式" />
 
     <Button
         android:id="@+id/helpBtn"

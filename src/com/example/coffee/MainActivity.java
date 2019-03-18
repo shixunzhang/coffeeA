@@ -1,4 +1,4 @@
-package com.example.dadishu;
+package com.example.coffee;
 
 
 
@@ -15,45 +15,17 @@ import android.widget.Button;
 public class MainActivity extends Activity {
 
 
-	private Button easyBon = null;
 	private Button exit = null;
 	private Button helpBtn = null;
-	private Button hardBtn = null;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		
-		easyBon = (Button) findViewById(R.id.easyBtn);
+
         exit = (Button) findViewById(R.id.exit);
         helpBtn = (Button) findViewById(R.id.helpBtn);
-        hardBtn = (Button) findViewById(R.id.hardBtn);
-
-
-        easyBon.setOnClickListener(new OnClickListener(){
-
-			@Override
-			public void onClick(View v) {
-				Intent intent = new Intent();
-				intent.setClass(MainActivity.this, PlayActivity.class);
-				MainActivity.this.startActivity(intent);
-
-			}
-        });
-
-
-        hardBtn.setOnClickListener(new OnClickListener(){
-
-			@Override
-			public void onClick(View v) {
-				Intent intent = new Intent();
-				intent.setClass(MainActivity.this, HardActivity.class);
-				MainActivity.this.startActivity(intent);
-
-			}
-        });
 
 
 
