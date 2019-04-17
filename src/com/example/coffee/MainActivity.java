@@ -1,7 +1,5 @@
 package com.example.coffee;
 
-
-
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.os.Build;
@@ -14,7 +12,6 @@ import android.webkit.WebViewClient;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
-
 
 	private WebView webView;
 	private long exitTime = 0;
@@ -37,7 +34,7 @@ public class MainActivity extends Activity {
 		mWebSettings.setLoadsImagesAutomatically(true); // 加载图片
 		mWebSettings.setSupportZoom(false);
 		mWebSettings.setTextZoom(100);
-		webView.loadUrl("http://192.168.0.115:8081/");
+		webView.loadUrl("http://192.168.0.112:8080/");
 
 		//设置不用系统浏览器打开,直接显示在当前Webview
 		webView.setWebViewClient(new WebViewClient() {
