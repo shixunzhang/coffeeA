@@ -34,7 +34,7 @@ public class MainActivity extends Activity {
 		mWebSettings.setLoadsImagesAutomatically(true); // 加载图片
 		mWebSettings.setSupportZoom(false);
 		mWebSettings.setTextZoom(100);
-		webView.loadUrl("http://192.168.0.112:8080/");
+		webView.loadUrl("http://192.168.43.95:8080/");
 
 		//设置不用系统浏览器打开,直接显示在当前Webview
 		webView.setWebViewClient(new WebViewClient() {
